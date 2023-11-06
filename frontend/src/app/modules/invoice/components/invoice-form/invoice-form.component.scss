@@ -1,0 +1,13 @@
+input,
+textarea {
+    width: 100%;
+}
+
+#create_credit_modal_footer {
+    width: 100%;
+    text-align: right;
+
+    button:first-of-type {
+        margin-right: 1rem;
+    }
+}

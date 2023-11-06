@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import "/node_modules/ng-zorro-antd/ng-zorro-antd.dark.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Roboto";
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+// GLOBAL VARIABLES
+
+:root {
+    // SIZES
+    --auth-screen-left-section: 540px;
+    --top-navigation: 60px;
+    --side-navigation: 200px;
+    // COLORS
+    --dark-1: #1f1f1f;
+    --dark-2: #242424;
+    --light-1: #333333;
+    --primary: #167ddc;
+}
+// SHARED STYLING
+.module_main_display_area {
+    width: 80%;
+    max-width: 1200px;
+    margin: 1rem auto;
+}

@@ -1,0 +1,16 @@
+<section id="service__data_display">
+    <ng-container *ngIf="isFetchingData === true">
+        <span nz-icon [nzType]="'sync'" [nzSpin]="true"></span>
+    </ng-container>
+
+    <ng-container *ngIf="isFetchingData === false">
+        <ng-container *ngIf="!!INVOICE_DATA">
+            <main class="module_data_grid_layout">
+                <ski-invoice-table (ActionEvent)="fetchData()" [data]="INVOICE_DATA"></ski-invoice-table>
+            </main>
+        </ng-container>
+        <ng-container *ngIf="!!!INVOICE_DATA">
+            <nz-empty></nz-empty>
+        </ng-container>
+    </ng-container>
+</section>

@@ -1,0 +1,28 @@
+#module__header {
+    width: 100%;
+    padding: 1rem;
+
+    background-color: var(--dark-1);
+    border: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--light-1);
+
+    #module__information {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+
+        p {
+            font-size: .8rem;
+            font-weight: 300;
+        }
+    }
+}

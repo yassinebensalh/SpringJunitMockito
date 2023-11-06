@@ -1,0 +1,33 @@
+#authenticated_navbar {
+    width: 100%;
+    height: var(--top-navigation);
+    padding: 0 1rem;
+    background-color: var(--dark-1);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    #notification_trigger {
+        width: 40px;
+        height: 40px;
+
+        margin-right: 1rem;
+
+        border-radius: 50%;
+        border: 2px solid var(--light-1);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: .2s ease-in-out;
+
+        &:hover {
+            background-color: var(--primary);
+            border-color: var(--primary);
+            cursor: pointer;
+        }
+    }
+}

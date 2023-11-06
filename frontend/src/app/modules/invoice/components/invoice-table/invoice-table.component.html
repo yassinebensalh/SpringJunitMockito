@@ -1,0 +1,39 @@
+<nz-table #filterTable [nzData]="data" nzTableLayout="fixed">
+    <thead>
+        <tr>
+            <th *ngFor="let column of listOfColumns">
+                {{ column.name }}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of filterTable.data">
+            <td>
+                <div>
+                    {{ data.amountDiscount }}
+                </div>
+            </td>
+            <td>{{ data.amountInvoice }}</td>
+            <td>{{ data.dateCreationInvoice }}</td>
+            <td>{{ data.archived }}</td>
+
+            <td style="width: 100%">
+                <div nz-row [nzGutter]="4">
+                    <div nz-col nzSpan="10">
+                        <button
+                            *ngIf="true"
+                            nz-popconfirm
+                            nzPopconfirmTitle="Are you sure you want delete this invoice?"
+                            nzPopconfirmPlacement="bottom"
+                            (nzOnCancel)="cancel()"
+                            (nzOnConfirm)="deleteInvoice(data.idInvoice)"
+                            nz-button
+                            style="background-color: transparent">
+                            <span nz-icon style="color: red" nzType="delete"></span>
+                        </button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</nz-table>

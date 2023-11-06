@@ -1,0 +1,14 @@
+<div id="authenticated_sidebar">
+    <div id="branding">
+        <img style="display: flex" src="../../../assets/Tiramisu.png" />
+    </div>
+    <div class="divider"><nz-divider></nz-divider></div>
+    <ul nz-menu nzTheme="dark">
+        <ng-container *ngFor="let linkGroup of routes">
+            <li nz-menu-item (click)="navigateToRoute(linkGroup.label)">
+                <span nz-icon [nzType]="linkGroup.icon" nzTheme="outline"></span>
+                <span>{{ linkGroup.label }}</span>
+            </li>
+        </ng-container>
+    </ul>
+</div>

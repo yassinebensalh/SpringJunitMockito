@@ -1,0 +1,16 @@
+<section id="invoices_section">
+    <ski-module-header
+        [moduleName]="'Create new invoice'"
+        [moduleDescription]="'This module allows you to manage your invoices.'"
+        (triggerFormEvent)="createNewInvoiceModalIsVisible = true"></ski-module-header>
+    <section class="module_main_display_area">
+        <ski-invoice-data></ski-invoice-data>
+    </section>
+</section>
+
+<!-- ADD NEW MODAL -->
+<nz-modal [(nzVisible)]="createNewInvoiceModalIsVisible" nzTitle="Create new invoice" [nzFooter]="null">
+    <ng-container *nzModalContent>
+        <ski-invoice-form (triggerCloseEvent)="createNewInvoiceModalIsVisible = false"></ski-invoice-form>
+    </ng-container>
+</nz-modal>

@@ -1,0 +1,18 @@
+<div id="module__header">
+    <div id="module__information">
+        <div>
+            <h1>{{ moduleName }}</h1>
+            <p>{{ moduleDescription }}</p>
+        </div>
+
+        <!-- basicly useless now dont worry about it just too lazy to reove it-->
+        <button
+            *ngIf="moduleName.toLowerCase()"
+            nz-button
+            nzType="primary"
+            (click)="triggerFormEvent.emit(true)"
+        >
+            Create
+        </button>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<section id="suppliers_section">
+    <ski-module-header
+        [moduleName]="'Create new supplier'"
+        [moduleDescription]="'This module allows you to manage your suppliers.'"
+        (triggerFormEvent)="createNewSupplierModalIsVisible = true"></ski-module-header>
+    <section class="module_main_display_area">
+        <ski-supplier-data></ski-supplier-data>
+    </section>
+</section>
+
+<!-- ADD NEW MODAL -->
+<nz-modal [(nzVisible)]="createNewSupplierModalIsVisible" nzTitle="Create new Supplier" [nzFooter]="null">
+    <ng-container *nzModalContent>
+        <ski-supplier-form (triggerCloseEvent)="createNewSupplierModalIsVisible = false"></ski-supplier-form>
+    </ng-container>
+</nz-modal>

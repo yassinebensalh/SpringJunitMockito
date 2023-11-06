@@ -1,0 +1,18 @@
+<div id="authenticated_navbar">
+    <div id="notification_trigger">
+        <span nz-icon nzType="bell" nzTheme="outline"></span>
+    </div>
+    <nz-avatar nzIcon="user" (click)="open()"></nz-avatar>
+</div>
+
+<nz-drawer
+    [nzClosable]="false"
+    [nzVisible]="visible"
+    nzPlacement="right"
+    nzTitle="Profile"
+    (nzOnClose)="close()"
+>
+    <ng-container *nzDrawerContent>
+        <bna-user-profile></bna-user-profile>
+    </ng-container>
+</nz-drawer>

@@ -1,0 +1,38 @@
+<form [formGroup]="INVOICE_FORM" nz-form [nzLayout]="'vertical'">
+    <div nz-row [nzGutter]="4">
+        <div nz-col nzSpan="12">
+            <nz-form-item>
+                <nz-form-label>Discount amount</nz-form-label>
+                <nz-form-control>
+                    <input nz-input placeholder="Discount amount" nzSize="large" formControlName="amountDiscount" />
+                </nz-form-control>
+            </nz-form-item>
+        </div>
+        <div nz-col nzSpan="12">
+            <nz-form-item>
+                <nz-form-label>Invoice amount</nz-form-label>
+                <nz-form-control>
+                    <input nz-input placeholder="Invoice amount" nzSize="large" formControlName="amountInvoice" />
+                </nz-form-control>
+            </nz-form-item>
+        </div>
+    </div>
+    <!-- <div nz-row [nzGutter]="4">
+        <div nz-col nzSpan="24">
+            <nz-form-item>
+                <nz-form-label>Supplier Category</nz-form-label>
+                <nz-form-control>
+                    <nz-select formControlName="category" nzSize="large" nzValue="ORDINAIRE" nzPlaceHolder="Choose a Category">
+                        <nz-option *ngFor="let supplier of SUPPLIER_TYPE" [nzValue]="supplier" [nzLabel]="supplier"></nz-option>
+                    </nz-select>
+                </nz-form-control>
+            </nz-form-item>
+        </div>
+    </div> -->
+
+    <nz-divider></nz-divider>
+    <div id="create_invoice_modal_footer">
+        <button nz-button nzType="default" (click)="triggerCloseEvent.emit(true)">Cancel</button>
+        <button nz-button nzType="primary" [nzLoading]="DATA_IS_BEING_SENT" [disabled]="!INVOICE_FORM.touched || !INVOICE_FORM.valid" (click)="saveInvoice()">save</button>
+    </div>
+</form>

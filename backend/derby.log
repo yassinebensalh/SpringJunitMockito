@@ -1,0 +1,16 @@
+----------------------------------------------------------------
+Mon Nov 06 17:57:26 WAT 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-018b-a591-5387-000002e4d7f0 
+on database directory memory:C:\Users\user\Desktop\devops JUnit\Junit+Mockito\9af59c8c-f791-469d-b4a5-23c974f612de with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@368239c8 
+Loaded from file:/C:/Users/user/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Microsoft
+java.runtime.version=11.0.12+7
+user.dir=C:\Users\user\Desktop\devops JUnit\Junit+Mockito
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Nov 06 17:57:27 WAT 2023:
+Shutting down instance a816c00e-018b-a591-5387-000002e4d7f0 on database directory memory:C:\Users\user\Desktop\devops JUnit\Junit+Mockito\9af59c8c-f791-469d-b4a5-23c974f612de with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@368239c8 
