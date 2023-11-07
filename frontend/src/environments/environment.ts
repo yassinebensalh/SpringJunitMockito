@@ -4,5 +4,5 @@ export const environment = {
         domain: 'dev-ls4zviwzzc5kn7qb.us.auth0.com',
         clientId: 'vFrIzG8Rr0UDhp0i6rWr6LqNZE0DNzFq',
     },
-    API_URL: 'http://localhost:8082/',
+    API_URL: 'http://192.168.10.21:8082/',
 };
