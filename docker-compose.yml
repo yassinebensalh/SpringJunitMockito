@@ -24,6 +24,9 @@ services:
     restart: on-failure
     networks:
       - springapimysql-net
+    environment:
+      - database=mysqldb
+      - password=root
     ports:
       - 8082:8082
     volumes:
