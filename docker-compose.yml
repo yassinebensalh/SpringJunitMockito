@@ -52,5 +52,3 @@ volumes:
 networks:
   springapimysql-net:
     driver: bridge
-
-
